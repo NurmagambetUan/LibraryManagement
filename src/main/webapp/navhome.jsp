@@ -9,6 +9,8 @@
                 <a class="nav-item nav-link" href="index.jsp">Home</a>
                 <a class="nav-item nav-link" href="AdminLogin">Admin</a>
                 <a class="nav-item nav-link" href="LibrarianLogin">Librarian</a>
+                <a class="nav-item nav-link" href="listofbooks.jsp">List of books</a>
+                <a class="nav-item nav-link" href="searchbook.jsp">Search book</a>
             </div>
         </div>
     </nav>
