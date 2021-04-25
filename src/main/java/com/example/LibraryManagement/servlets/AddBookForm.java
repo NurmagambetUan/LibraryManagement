@@ -12,19 +12,25 @@ import java.io.PrintWriter;
 @WebServlet("/AddBookForm")
 public class AddBookForm extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
+		try {
+			response.setContentType("text/html");
 
-		request.getRequestDispatcher("header.jsp").include(request, response);
-		request.getRequestDispatcher("navlibrarian.jsp").include(request, response);
-		
-		out.println("<div class='container'>");
-		request.getRequestDispatcher("addbookform.jsp").include(request, response);
-		out.println("</div>");
-		
-		
-		request.getRequestDispatcher("footer.jsp").include(request, response);
-		out.close();
+
+			request.getRequestDispatcher("header.jsp").include(request, response);
+			request.getRequestDispatcher("navlibrarian.jsp").include(request, response);
+
+			out.println("<div class='container'>");
+			request.getRequestDispatcher("addbookform.jsp").include(request, response);
+			out.println("</div>");
+
+
+			request.getRequestDispatcher("footer.jsp").include(request, response);
+			out.close();
+		}
+		catch (IOException e) {
+			out.println("<h3>An IOException occurred</h3>");
+		}
 	}
 
 }

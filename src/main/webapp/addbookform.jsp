@@ -1,4 +1,9 @@
+
+<jsp:useBean id="bookDetails" class="com.example.LibraryManagement.objects.Books"
+             scope="session"></jsp:useBean>
+<jsp:setProperty property="*" name="bookDetails"/>
 <h3>Add Book Form</h3>
+
 <form action="AddBook" method="post" style="width:300px">
     <div class="form-group">
         <label for="callno1">Callno</label>

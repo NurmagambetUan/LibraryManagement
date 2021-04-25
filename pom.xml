@@ -64,7 +64,7 @@
                 <configuration>
                     <url>jdbc:postgresql://localhost:5432/LibrarySystem</url>
                     <user>postgres</user>
-                    <password>qweasz11</password>
+                    <password>dbpass</password>
                 </configuration>
             </plugin>
         </plugins>
