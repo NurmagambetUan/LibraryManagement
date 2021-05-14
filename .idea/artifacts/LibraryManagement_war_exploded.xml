@@ -15,7 +15,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.10" />
-          <element id="library" level="project" name="Maven: org.flywaydb:flyway-core:7.7.3" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.196" />
+          <element id="library" level="project" name="Maven: org.flywaydb:flyway-core:6.3.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
